@@ -1,0 +1,37 @@
+{
+  "name": "image-file-size",
+  "version": "0.0.2",
+  "description": "get image file path in browser",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "dev": "cd demo/ && parcel index.html",
+    "update-demo": "cd demo/ && rm -r -f dist && parcel build index.html --public-url ./ && git add -f dist && git commit -m 'update demo'",
+    "build": "microbundle --external all --sourcemap false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxp/image-file-size.git"
+  },
+  "keywords": [
+    "image",
+    "file",
+    "size"
+  ],
+  "author": "Alan Lu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luxp/image-file-size/issues"
+  },
+  "homepage": "https://github.com/luxp/image-file-size#readme",
+  "dependencies": {
+    "exif-js": "^2.3.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.4.4",
+    "parcel-bundler": "^1.8.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
