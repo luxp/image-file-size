@@ -1,7 +1,7 @@
 {
   "name": "image-file-size",
   "version": "1.0.0",
-  "description": "get image file path in browser",
+  "description": "get dimensions of any image file in browser",
   "main": "dist/index.js",
   "source": "src/index.js",
   "scripts": {
